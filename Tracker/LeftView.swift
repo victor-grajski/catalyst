@@ -1,5 +1,5 @@
 //
-//  View1.swift
+//  LeftView.swift
 //  Tracker
 //
 //  Created by Lex Nasser on 11/7/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class View1: UIViewController {
+class LeftView : UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  View2.swift
+//  CenterView.swift
 //  Tracker
 //
 //  Created by Lex Nasser on 11/7/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class View2 : UIViewController {
+class CenterView : UIViewController {
 
     override func viewDidLoad ( ) {
         

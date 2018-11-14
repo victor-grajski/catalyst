@@ -17,21 +17,36 @@ class ViewController : UIViewController {
         
         super . viewDidLoad ( )
         
-        let v1 = View1 ( nibName : "View1" , bundle : nil )
-        self . addChild ( v1 )
-        self . scrollView . addSubview ( v1 . view )
-        v1 . didMove ( toParent : self )
+        let left = LeftView ( nibName : "LeftView" , bundle : nil )
+        self . addChild ( left )
+        self . scrollView . addSubview ( left . view )
+        left . didMove ( toParent : self )
         
-        let v2 = View2 ( nibName : "View2" , bundle : nil )
-        self . addChild ( v2 )
-        self . scrollView . addSubview ( v2 . view )
-        v2 . didMove ( toParent : self )
+        let center = CenterView ( nibName : "CenterView" , bundle : nil )
+        self . addChild ( center )
+        self . scrollView . addSubview ( center . view )
+        center . didMove ( toParent : self )
         
-        var v2Frame : CGRect = v2 . view . frame
-        v2Frame . origin . x = self . view . frame . width
-        v2 . view . frame = v2Frame
+        let right = RightView ( nibName : "RightView" , bundle : nil )
+        self . addChild ( right )
+        self . scrollView . addSubview ( right . view )
+        right . didMove ( toParent : self )
         
-        self . scrollView . contentSize = CGSize ( width : self . view . frame . width * 2 , height : self . view . frame . size . height )
+        var leftFrame : CGRect = left . view . frame
+        leftFrame . origin . x = 0
+        left . view . frame = leftFrame
+        
+        var centerFrame : CGRect = center . view . frame
+        centerFrame . origin . x = self . view . frame . width
+        center . view . frame = centerFrame
+        
+        var rightFrame : CGRect = right . view . frame
+        rightFrame . origin . x = self . view . frame . width * 2
+        right . view . frame = rightFrame
+        
+        self . scrollView . contentSize = CGSize ( width : self . view . frame . width * 3 , height : self . view . frame . size . height )
+        
+        self . scrollView . bounces = false
         
         self . view . bringSubviewToFront ( headerView )
             
