@@ -25,7 +25,6 @@ class CenterView : UIViewController , UITextFieldDelegate {
     
     override func viewDidLoad ( ) {
         
-        
         super . viewDidLoad ( )
         
         cell1 . layer . cornerRadius = 10
@@ -65,8 +64,6 @@ class CenterView : UIViewController , UITextFieldDelegate {
         return false
         
     }
-    
-
 
     @IBAction func logButtonTapped ( _ sender : Any ) {
         
