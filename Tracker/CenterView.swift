@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CenterView : UIViewController {
+class CenterView : UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var cell1: UIView!
     @IBOutlet weak var cell1TextField: UITextField!
@@ -17,6 +17,7 @@ class CenterView : UIViewController {
     @IBOutlet weak var cell3: UIView!
     @IBOutlet weak var cell3TextField: UITextField!
     override func viewDidLoad ( ) {
+        
         
         super . viewDidLoad ( )
         
@@ -45,6 +46,19 @@ class CenterView : UIViewController {
         
         cell3TextField . backgroundColor = UIColor . black
         
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "entryCell", for: indexPath) as! EntryTableViewCell
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let trapRow = tableView.dequeueReusableCell(withIdentifier: "trapReuseIdentifier", for: indexPath) as? TrapTableViewCell {
+            selectedIndexPath = indexPath
+            
+        }
     }
 
 }
