@@ -47,10 +47,10 @@ class ViewController : UIViewController {
         self . scrollView . contentSize = CGSize ( width : self . view . frame . width * 3 , height : self . view . frame . size . height )
         
         self . scrollView . bounces = false
-        
-        //self . view . bringSubviewToFront ( headerView )
             
     }
+    
+    
 
 
 }
