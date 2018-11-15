@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CenterView : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CenterView : UIViewController {
 
     @IBOutlet weak var cell1: UIView!
     @IBOutlet weak var cell1TextField: UITextField!
@@ -48,17 +48,6 @@ class CenterView : UIViewController, UITableViewDelegate, UITableViewDataSource 
         
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "entryCell", for: indexPath) as! EntryTableViewCell
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let trapRow = tableView.dequeueReusableCell(withIdentifier: "trapReuseIdentifier", for: indexPath) as? TrapTableViewCell {
-            selectedIndexPath = indexPath
-            
-        }
-    }
+
 
 }
