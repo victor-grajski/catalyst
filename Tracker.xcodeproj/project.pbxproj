@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B271919B219D058C0004DEA5 /* TrapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B271919A219D058C0004DEA5 /* TrapTableViewCell.swift */; };
+		B271919D219D09B40004DEA5 /* traps.json in Resources */ = {isa = PBXBuildFile; fileRef = B271919C219D09B40004DEA5 /* traps.json */; };
 		C018DEB82193E470000E3276 /* RightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018DEB62193E470000E3276 /* RightView.swift */; };
 		C018DEB92193E470000E3276 /* RightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C018DEB72193E470000E3276 /* RightView.xib */; };
 		C05167232193A54D00D25251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05167222193A54D00D25251 /* AppDelegate.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B271919A219D058C0004DEA5 /* TrapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrapTableViewCell.swift; sourceTree = "<group>"; };
+		B271919C219D09B40004DEA5 /* traps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = traps.json; sourceTree = "<group>"; };
 		C018DEB62193E470000E3276 /* RightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightView.swift; sourceTree = "<group>"; };
 		C018DEB72193E470000E3276 /* RightView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightView.xib; sourceTree = "<group>"; };
 		C051671F2193A54D00D25251 /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +74,7 @@
 		C05167212193A54D00D25251 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				B271919C219D09B40004DEA5 /* traps.json */,
 				C05167222193A54D00D25251 /* AppDelegate.swift */,
 				C05167242193A54D00D25251 /* ViewController.swift */,
 				C05167262193A54D00D25251 /* Main.storyboard */,
@@ -84,6 +89,7 @@
 				C051672E2193A54E00D25251 /* LaunchScreen.storyboard */,
 				C05167312193A54E00D25251 /* Info.plist */,
 				C05167292193A54D00D25251 /* Tracker.xcdatamodeld */,
+				B271919A219D058C0004DEA5 /* TrapTableViewCell.swift */,
 			);
 			path = Tracker;
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 				C051672D2193A54E00D25251 /* Assets.xcassets in Resources */,
 				C05167402193A63300D25251 /* LeftView.xib in Resources */,
 				C018DEB92193E470000E3276 /* RightView.xib in Resources */,
+				B271919D219D09B40004DEA5 /* traps.json in Resources */,
 				C05167442193A82400D25251 /* CenterView.xib in Resources */,
 				C05167282193A54D00D25251 /* Main.storyboard in Resources */,
 			);
@@ -167,6 +174,7 @@
 				C05167252193A54D00D25251 /* ViewController.swift in Sources */,
 				C05167232193A54D00D25251 /* AppDelegate.swift in Sources */,
 				C051673F2193A63300D25251 /* LeftView.swift in Sources */,
+				B271919B219D058C0004DEA5 /* TrapTableViewCell.swift in Sources */,
 				C051672B2193A54D00D25251 /* Tracker.xcdatamodeld in Sources */,
 				C018DEB82193E470000E3276 /* RightView.swift in Sources */,
 			);
