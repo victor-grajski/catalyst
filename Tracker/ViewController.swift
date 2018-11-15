@@ -48,7 +48,7 @@ class ViewController : UIViewController {
         
         self . scrollView . bounces = false
         
-        self . view . bringSubviewToFront ( headerView )
+        //self . view . bringSubviewToFront ( headerView )
             
     }
 

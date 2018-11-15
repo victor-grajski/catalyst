@@ -19,6 +19,7 @@
 		C05167402193A63300D25251 /* LeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C051673E2193A63300D25251 /* LeftView.xib */; };
 		C05167432193A82400D25251 /* CenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05167412193A82400D25251 /* CenterView.swift */; };
 		C05167442193A82400D25251 /* CenterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C05167422193A82400D25251 /* CenterView.xib */; };
+		C0CBD6BA219CDC5D003D91C8 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CBD6B9219CDC5D003D91C8 /* Style.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C051673E2193A63300D25251 /* LeftView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftView.xib; sourceTree = "<group>"; };
 		C05167412193A82400D25251 /* CenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterView.swift; sourceTree = "<group>"; };
 		C05167422193A82400D25251 /* CenterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CenterView.xib; sourceTree = "<group>"; };
+		C0CBD6B9219CDC5D003D91C8 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				C05167422193A82400D25251 /* CenterView.xib */,
 				C018DEB62193E470000E3276 /* RightView.swift */,
 				C018DEB72193E470000E3276 /* RightView.xib */,
+				C0CBD6B9219CDC5D003D91C8 /* Style.swift */,
 				C051672C2193A54E00D25251 /* Assets.xcassets */,
 				C051672E2193A54E00D25251 /* LaunchScreen.storyboard */,
 				C05167312193A54E00D25251 /* Info.plist */,
@@ -164,6 +167,7 @@
 				C05167232193A54D00D25251 /* AppDelegate.swift in Sources */,
 				C051673F2193A63300D25251 /* LeftView.swift in Sources */,
 				C051672B2193A54D00D25251 /* Tracker.xcdatamodeld in Sources */,
+				C0CBD6BA219CDC5D003D91C8 /* Style.swift in Sources */,
 				C018DEB82193E470000E3276 /* RightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

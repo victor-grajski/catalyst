@@ -10,10 +10,14 @@ import UIKit
 
 class RightView : UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var graph : UIView!
+    
+    override func viewDidLoad ( ) {
+        
+        super . viewDidLoad ( )
 
-        // Do any additional setup after loading the view.
+        graph . layer . cornerRadius = 10
+        
     }
 
 
