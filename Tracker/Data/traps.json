@@ -1,0 +1,72 @@
+{
+    "1": {
+        "name": "Catastrophizing",
+        "description": "Giving proportionally greater weight to a perceived failure, weakness or threat.",
+        "reframe": "What's the most likely outcome? How bad would it actually be?"
+    },
+    "2": {
+        "name": "Always Being Right",
+        "description": "Being wrong is unthinkable. Not considering the other side's perspective.",
+        "reframe": "How might the other person be interpreting the situation?"
+    },
+    "3": {
+        "name": "Personalizing",
+        "description": "Attributing personal responsibility to events over which you have no control.",
+        "reframe": "Focus on what you do have control over."
+    },
+    "4": {
+        "name": "Disqualifying the Positive",
+        "description": "Discounting positive events. For example, interpreting compliments as undeserved.",
+        "reframe": "What's one positive thing that happened today?"
+    },
+    "5": {
+        "name": "Emotional Reasoning",
+        "description": "Thinking something is true solely based on a feeling.",
+        "reframe": "Does the evidence support the feeling?"
+    },
+    "6": {
+        "name": "Mind Reading",
+        "description": "Inferring a person's possible (usually negative) thoughts from his or her behavior.",
+        "reframe": "If they were thinking the same thing about you would that make sense?"
+    },
+    "7": {
+        "name": "All-or-Nothing",
+        "description": "Evaluating the self, as well as events in life in extreme terms. It's either all good or all bad.",
+        "reframe": "What might the middle ground look like?"
+    },
+    "8": {
+        "name": "Overgeneralizing",
+        "description": "Drawing a very broad conclusion from a single incident or a single piece of evidence.",
+        "reframe": "Is a single occurrence enough evidence to support this claim?"
+    },
+    "9": {
+        "name": "Fortune Telling",
+        "description": "Predicting outcomes of events, usually negatively.",
+        "reframe": "Is your prediction backed up by factual evidence?"
+    },
+    "10": {
+        "name": "Should Statements",
+        "description": "Demanding particular achievements or behaviors regardless of the circumstances of the situation.",
+        "reframe": "What would a fact-based appraisal of the situation look like?"
+    },
+    "11": {
+        "name": "Labeling",
+        "description": "For example, instead of believing that you made a mistake, you believe that you are a loser.",
+        "reframe": "Can the way you feel in this situation be reasonably applied to all situations?"
+    },
+    "12": {
+        "name": "Fairness",
+        "description": "Perceiving life as failing to be fair.",
+        "reframe": "Is what you're worrying about within your control?"
+    },
+    "13": {
+        "name": "Change",
+        "description": "Expecting you can change other people into who you want them to be.",
+        "reframe": "What's one thing you appreciate about them just the way they are?"
+    },
+    "14": {
+        "name": "Blaming",
+        "description": "Holding other people responsible for events and ignoring your role.",
+        "reframe": "What role might you be playing in the situation?"
+    }
+}
