@@ -54,12 +54,12 @@ class ViewController : UIViewController {
         
         self . scrollView . bounces = false
         
+        // authenticate with Face ID
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             let authVC = AuthenticateViewController()
-            
+
             self.present(authVC, animated: true, completion: nil)
         }
-        
     }
     
     func authenticate() {

@@ -196,7 +196,6 @@
 		C05167162193A54D00D25251 = {
 			isa = PBXGroup;
 			children = (
-				B2F3739F21B24C3B000C40D7 /* Authenticate */,
 				C05167212193A54D00D25251 /* Tracker */,
 				C05167202193A54D00D25251 /* Products */,
 				83C1A050A1CFB0646A5E7E87 /* Pods */,
@@ -216,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				B25720F221ABBB4E006C3AC1 /* Tracker.entitlements */,
+				B2F3739F21B24C3B000C40D7 /* Authenticate */,
 				B25720E621ABA341006C3AC1 /* Model */,
 				B27D2A75219E10DE00959BB9 /* Main */,
 				B27D2A7C219E404F00959BB9 /* View Controllers */,

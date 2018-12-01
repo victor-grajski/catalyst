@@ -30,9 +30,9 @@
                             <rect key="frame" x="30" y="60" width="315" height="547"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exC-Ea-v3n">
-                                    <rect key="frame" x="128" y="254" width="59" height="39"/>
+                                    <rect key="frame" x="96.5" y="254" width="122" height="39"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                    <state key="normal" title="Log In"/>
+                                    <state key="normal" title="Authenticate"/>
                                     <state key="highlighted" title="Log Out"/>
                                     <connections>
                                         <action selector="tapButton:" destination="-1" eventType="touchUpInside" id="LAN-13-5mK"/>
@@ -45,7 +45,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.95686274510000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="nrT-Pp-Epy" firstAttribute="top" secondItem="exC-Ea-v3n" secondAttribute="bottom" constant="20" id="BM5-q0-rEY"/>
                                 <constraint firstItem="nrT-Pp-Epy" firstAttribute="centerX" secondItem="60p-NM-M9D" secondAttribute="centerX" id="Bmb-6Y-VQX"/>
@@ -54,7 +54,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.3294117647" green="0.66666666669999997" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="60p-NM-M9D" firstAttribute="top" secondItem="qXe-hc-MVZ" secondAttribute="top" constant="60" id="CGA-KL-LDa"/>
                         <constraint firstItem="60p-NM-M9D" firstAttribute="centerY" secondItem="qXe-hc-MVZ" secondAttribute="centerY" id="ZwB-md-Ujw"/>
