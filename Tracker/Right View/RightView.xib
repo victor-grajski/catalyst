@@ -27,7 +27,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8UD-GB-qbq">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="40.666666666666664"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Metrics" lineBreakMode="tailTruncation" minimumScaleFactor="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="eaM-TU-jWi">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Trends" lineBreakMode="tailTruncation" minimumScaleFactor="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="eaM-TU-jWi">
                                     <rect key="frame" x="20.666666666666657" y="0.0" width="372.66666666666674" height="43"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,7 +42,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="backgroundColor" red="0.3294117647" green="0.66666666669999997" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="eaM-TU-jWi" firstAttribute="width" secondItem="8UD-GB-qbq" secondAttribute="width" multiplier="0.9" priority="750" id="AqT-2B-o7a"/>
                                 <constraint firstItem="eaM-TU-jWi" firstAttribute="height" secondItem="8UD-GB-qbq" secondAttribute="height" priority="750" id="QZ0-gl-tsP"/>
@@ -55,7 +55,7 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niu-NK-EBv" customClass="HorizontalBarChartView" customModule="Charts">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="736.33333333333337"/>
-                                    <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="backgroundColor" red="0.3294117647" green="0.66666666669999997" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                             </subviews>
                             <constraints>
@@ -76,7 +76,7 @@
                     </constraints>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="deviceRGB"/>
+            <color key="backgroundColor" red="0.3294117647" green="0.66666666669999997" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ud4-eg-tg5" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Ytr-hp-U5y"/>
                 <constraint firstItem="ud4-eg-tg5" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="mrY-tj-28K"/>
