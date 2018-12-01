@@ -129,7 +129,39 @@ class CenterView : UIViewController , UITextViewDelegate, UITableViewDelegate, U
         cell2TableView.register(nib, forCellReuseIdentifier: "TrapTableViewCell")
         
         logView . layer . cornerRadius = 10
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
 
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    
+    func hideKeyboard() {
+        cell3TextField.resignFirstResponder()
+    }
+    
+    @objc func keyboardWillChange(notification: Notification) {
+        if cell3TextField.isFirstResponder {
+            guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+                return
+            }
+            
+            if notification.name == UIResponder.keyboardWillShowNotification || notification.name == UIResponder.keyboardWillChangeFrameNotification {
+                view.frame.origin.y = -keyboardRect.height
+            } else {
+                view.frame.origin.y = 0
+            }
+        }
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
