@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class ViewController : UIViewController {
     
     @IBOutlet weak var scrollView : UIScrollView!
     @IBOutlet weak var headerView: UIView!
+
     
     override func viewDidLoad ( ) {
         
         super . viewDidLoad ( )
+        
+        // authenticate()
         
         ThoughtTrapGenerator.getThoughtTrapArray()
         
@@ -50,6 +54,39 @@ class ViewController : UIViewController {
         
         self . scrollView . bounces = false
         
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            let authVC = AuthenticateViewController()
+            
+            self.present(authVC, animated: true, completion: nil)
+        }
+        
+    }
+    
+    func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Identify yourself!"
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
+                [unowned self] (success, authenticationError) in
+                
+                DispatchQueue.main.async {
+                    if success {
+                        print("meep")
+                    } else {
+                        let ac = UIAlertController(title: "Authentication failed", message: "You could not be verified; please try again.", preferredStyle: .alert)
+                        ac.addAction(UIAlertAction(title: "OK", style: .default))
+                        self.present(ac, animated: true)
+                    }
+                }
+            }
+        } else {
+            let ac = UIAlertController(title: "Biometry unavailable", message: "Your device is not configured for biometric authentication.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(ac, animated: true)
+        }
     }
 
 }

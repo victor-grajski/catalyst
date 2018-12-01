@@ -26,6 +26,8 @@
 		B27D2A84219E8A7400959BB9 /* ReframeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27D2A82219E8A7400959BB9 /* ReframeInfoViewController.swift */; };
 		B27D2A85219E8A7400959BB9 /* ReframeInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27D2A83219E8A7400959BB9 /* ReframeInfoViewController.xib */; };
 		B294E0B921AA846200F35B83 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B294E0B821AA846200F35B83 /* ChartViewController.swift */; };
+		B2F373A221B24C52000C40D7 /* AuthenticateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F373A021B24C52000C40D7 /* AuthenticateViewController.swift */; };
+		B2F373A321B24C52000C40D7 /* AuthenticateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F373A121B24C52000C40D7 /* AuthenticateViewController.xib */; };
 		C018DEB82193E470000E3276 /* RightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C018DEB62193E470000E3276 /* RightView.swift */; };
 		C018DEB92193E470000E3276 /* RightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C018DEB72193E470000E3276 /* RightView.xib */; };
 		C05167232193A54D00D25251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05167222193A54D00D25251 /* AppDelegate.swift */; };
@@ -60,6 +62,8 @@
 		B27D2A82219E8A7400959BB9 /* ReframeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReframeInfoViewController.swift; sourceTree = "<group>"; };
 		B27D2A83219E8A7400959BB9 /* ReframeInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReframeInfoViewController.xib; sourceTree = "<group>"; };
 		B294E0B821AA846200F35B83 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		B2F373A021B24C52000C40D7 /* AuthenticateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateViewController.swift; sourceTree = "<group>"; };
+		B2F373A121B24C52000C40D7 /* AuthenticateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticateViewController.xib; sourceTree = "<group>"; };
 		C018DEB62193E470000E3276 /* RightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightView.swift; sourceTree = "<group>"; };
 		C018DEB72193E470000E3276 /* RightView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightView.xib; sourceTree = "<group>"; };
 		C051671F2193A54D00D25251 /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +176,15 @@
 			path = "Cell Controllers";
 			sourceTree = "<group>";
 		};
+		B2F3739F21B24C3B000C40D7 /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				B2F373A021B24C52000C40D7 /* AuthenticateViewController.swift */,
+				B2F373A121B24C52000C40D7 /* AuthenticateViewController.xib */,
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
 		BBFEA998F1E074CF589E1DC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +196,7 @@
 		C05167162193A54D00D25251 = {
 			isa = PBXGroup;
 			children = (
+				B2F3739F21B24C3B000C40D7 /* Authenticate */,
 				C05167212193A54D00D25251 /* Tracker */,
 				C05167202193A54D00D25251 /* Products */,
 				83C1A050A1CFB0646A5E7E87 /* Pods */,
@@ -330,6 +344,7 @@
 				B27191A1219D14D60004DEA5 /* traps.json in Resources */,
 				B2394E64219D55FE00082867 /* EntryTableViewCell.xib in Resources */,
 				B27D2A7B219E269600959BB9 /* EntryDetailTrapTableViewCell.xib in Resources */,
+				B2F373A321B24C52000C40D7 /* AuthenticateViewController.xib in Resources */,
 				C018DEB92193E470000E3276 /* RightView.xib in Resources */,
 				C05167442193A82400D25251 /* CenterView.xib in Resources */,
 				C05167282193A54D00D25251 /* Main.storyboard in Resources */,
@@ -395,6 +410,7 @@
 				B27D2A7A219E269600959BB9 /* EntryDetailTrapTableViewCell.swift in Sources */,
 				C05167252193A54D00D25251 /* ViewController.swift in Sources */,
 				C05167232193A54D00D25251 /* AppDelegate.swift in Sources */,
+				B2F373A221B24C52000C40D7 /* AuthenticateViewController.swift in Sources */,
 				B25720ED21ABA37E006C3AC1 /* ThoughtTrap.swift in Sources */,
 				B2394E5F219D494800082867 /* TrapTableViewCell.swift in Sources */,
 				B25720F021ABA37E006C3AC1 /* ThoughtTrapGenerator.swift in Sources */,
