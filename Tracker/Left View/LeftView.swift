@@ -24,17 +24,18 @@ class LeftView : UIViewController, UITableViewDelegate, UITableViewDataSource {
         let iCloudKeyStoreRestore: NSUbiquitousKeyValueStore? = NSUbiquitousKeyValueStore()
         var entriesRestoreArray: [Entry] = []
         if let entriesArray = iCloudKeyStoreRestore?.array(forKey: "entries") as? [[String]] {
-            print("iCloud leftview entriesArray: ", entriesArray)
-            
             for entry in entriesArray {
                 entriesRestoreArray.append(parseStringList(stringList: entry))
             }
             UserDefaults.standard.set(entriesRestoreArray.map {$0.toStringList()}, forKey: "entries" )
-        }
-        print("entriesRestoreArray: ", entriesRestoreArray)
-        if let countsRestore = iCloudKeyStoreRestore?.dictionary(forKey: "counts") as? [String:Int] {
-            print("countsDict: ", countsRestore)
-            UserDefaults.standard.set(countsRestore, forKey: "counts")
+            
+            if let countsRestore = iCloudKeyStoreRestore?.dictionary(forKey: "counts") as? [String:Int] {
+                UserDefaults.standard.set(countsRestore, forKey: "counts")
+            }
+            
+            let alert = UIAlertController ( title : "iCloud Restore" , message : "Your iCloud entries have been restored." , preferredStyle : . alert )
+            alert . addAction ( UIAlertAction ( title : "Refresh" , style : UIAlertAction . Style . default, handler: { action in self.handleRefresh(self.refreshControl)}))
+            self . present ( alert , animated : true , completion : nil )
         }
     }
     
