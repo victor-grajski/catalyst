@@ -42,7 +42,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="backgroundColor" red="0.3294117647" green="0.66666666669999997" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="2vW-rk-F1B" firstAttribute="width" secondItem="MHl-dA-aAF" secondAttribute="width" multiplier="0.9" id="6Ni-bt-2ga"/>
                                 <constraint firstItem="2vW-rk-F1B" firstAttribute="centerY" secondItem="MHl-dA-aAF" secondAttribute="centerY" id="SmR-8y-cgx"/>
@@ -55,10 +55,13 @@
                             <subviews>
                                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NXg-jJ-ocR">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="660.66666666666663"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.98039215690000003" green="0.95686274510000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="sectionIndexBackgroundColor" red="0.98039215690000003" green="0.95686274510000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="sectionIndexTrackingBackgroundColor" red="0.98039215690000003" green="0.95686274510000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableView>
                             </subviews>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.95686274510000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstItem="NXg-jJ-ocR" firstAttribute="width" secondItem="YwQ-hR-TnE" secondAttribute="width" multiplier="0.95" id="nyn-28-qZ9"/>
                                 <constraint firstItem="NXg-jJ-ocR" firstAttribute="centerX" secondItem="YwQ-hR-TnE" secondAttribute="centerX" id="vHs-Yq-cDO"/>
@@ -75,7 +78,7 @@
                     </constraints>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="deviceRGB"/>
+            <color key="backgroundColor" red="0.3294117647" green="0.66666666669999997" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="2Nm-mj-AUZ" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="6Pf-p1-KVB"/>
