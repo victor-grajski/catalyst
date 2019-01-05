@@ -6,6 +6,6 @@ Users write a short description of what's on their mind, select one or many of t
 
 In addition to logging maladaptive thoughts, users can view their past entries as well as a chart that shows which cognitive distortions they fall into most often.
 
-Users also have the option to restore their entries from iCloud in case they get a new device.
+Users also have the option to restore their entries from iCloud in case they move to a new device.
 
 Finally, the app is secured via Face ID or a passcode depending on the device.
